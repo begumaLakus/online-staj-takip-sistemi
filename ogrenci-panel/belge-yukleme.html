@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Belge Yükleme</title>
+  <link rel="stylesheet" href="css/ogrenci-arayuz.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul class="menu">
+        <li><a href="ogrenci-arayuz.html">👨‍🎓 Profil</a></li>
+        <li><a href="daily.html">📅 Günlük Program</a></li>
+        <li class="active"><a href="#">📎 Belge Yükleme</a></li>
+        <li><a href="staj-sureci.html">📘 Staj Süreci</a></li>
+        <li><a href="reset-password.html">🔑 Şifre Değiştir</a></li>
+        <li><a href="#" id="logoutBtn">↩️ Çıkış Yap</a></li>
+      </ul>
+    </aside>
+
+    <!-- İçerik -->
+    <main class="content">
+      <div class="card" style="margin-bottom: 30px;">
+        <h2>Yüklenmiş Belgeler</h2>
+        <table style="width: 100%; border-collapse: collapse;">
+          <thead>
+            <tr>
+              <th>Belge Türü</th>
+              <th>Durum</th>
+              <th>Yüklenme Tarihi</th>
+              <th>İşlem</th>
+            </tr>
+          </thead>
+          <tbody id="belgeTablosu">
+  <!-- JavaScript ile buraya otomatik veri gelecek -->
+</tbody>
+
+        </table>
+      </div>
+
+    <div class="card">
+  <h2>Yeni Belge Yükle</h2>
+  <form id="belgeForm" enctype="multipart/form-data">
+    <label>Belge Türü:</label>
+    <select id="belgeTuru" required>
+      <option value="">-- Seçiniz --</option>
+      <option value="staj-kabul">Staj Kabul Belgesi</option>
+      <option value="zorunlu-staj">Zorunlu Staj Belgesi</option>
+      <option value="rapor">Günlük Raporlar</option>
+      <option value="degerlendirme">Değerlendirme Formu</option>
+    </select>
+    <label>Belge Seç:</label>
+    <input type="file" id="belgeDosya" required />
+    <button type="submit">Yükle</button>
+  </form>
+</div>
+
+  <script src="JavaScript/belge-yukleme.js"></script>
+</body>
+</html>

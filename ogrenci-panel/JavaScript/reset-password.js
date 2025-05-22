@@ -1,0 +1,1 @@
+<script src="JavaScript/ogrenci-arayuz.js"></script>

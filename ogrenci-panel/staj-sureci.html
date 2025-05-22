@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staj Süreci</title>
+  <link rel="stylesheet" href="css/ogrenci-arayuz.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <ul class="menu">
+        <li><a href="ogrenci-arayuz.html">👨‍🎓 Profil</a></li>
+        <li><a href="daily.html">📅 Günlük Program</a></li>
+        <li><a href="belge-yukleme.html">📎 Belge Yükleme</a></li>
+        <li class="active"><a href="staj-sureci.html">📘 Staj Süreci</a></li>
+        <li><a href="reset-password.html">🔑 Şifre Değiştir</a></li>
+        <li><a href="#" id="logoutBtn">↩️ Çıkış Yap</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <section class="section-content active">
+        <h2>Staj Yeri Bilgileri</h2>
+        <p><strong>Firma:</strong> <span id="firmaGoster">Yükleniyor...</span></p>
+        <p><strong>Departman:</strong> <span id="departmanGoster">Yükleniyor...</span></p>
+        <p><strong>Başlangıç Tarihi:</strong> <span id="baslangicGoster">Yükleniyor...</span></p>
+        <p><strong>Bitiş Tarihi:</strong> <span id="bitisGoster">Yükleniyor...</span></p>
+        <p><strong>Toplam Süre:</strong> <span id="sureGoster">Yükleniyor...</span></p>
+
+        <h3>Staj İlerlemesi</h3>
+        <svg width="120" height="120">
+          <circle id="progress" cx="60" cy="60" r="50" stroke="blue" stroke-width="10" fill="none" stroke-dasharray="314" stroke-dashoffset="314"/>
+          <text id="progressText" x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="20">0%</text>
+        </svg>
+
+        <h3>Günlük Raporlar</h3>
+        <div id="gunlukOzet">
+          <p>Yükleniyor...</p>
+        </div>
+
+        <h3>Stajı Bitirme</h3>
+        <textarea id="finalNote" placeholder="Staj değerlendirme notunuzu yazın..."></textarea><br>
+        <button id="finishBtn">Stajı Bitirdim</button>
+        <p id="finishMessage"></p>
+      </section>
+    </main>
+  </div>
+
+  <script src="JavaScript/staj-sureci.js"></script>
+</body>
+</html>
+

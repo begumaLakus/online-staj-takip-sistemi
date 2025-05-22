@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giriş / Kayıt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-toggle">
+      <button onclick="moveSlider('login')">Giriş Yap</button>
+      <button onclick="moveSlider('register')">Kayıt Ol</button>
+    </div>
+
+    <div class="slider-wrapper">
+      <div class="form-slider" id="formSlider">
+        <!-- GİRİŞ FORMU -->
+        <form id="loginForm" class="form">
+          <h2>Giriş Yap</h2>
+          <input type="email" name="email" placeholder="📧 E-Posta" required>
+          <input type="password" name="password" placeholder="🔒 Şifre" required>
+          <button type="submit">🚪 Giriş Yap</button>
+        </form>
+
+        <!-- KAYIT FORMU -->
+        <form id="registerForm" class="form">
+          <h2>Kayıt Ol</h2>
+          <select id="role" name="role" onchange="handleRoleChange()" required>
+            <option value="">Rol Seçin</option>
+            <option value="ogrenci">Öğrenci</option>
+            <option value="danisman">Danışman</option>
+          </select>
+
+          <input type="text" name="adsoyad" placeholder="👤 Ad Soyad" required>
+          <input type="email" name="email" placeholder="📧 E-Posta" required>
+          <input type="password" name="sifre" placeholder="🔒 Şifre" required>
+
+          <div id="ogrenciFields" class="hidden">
+            <input type="text" id="ogrenciNo" name="ogrenciNo" placeholder="🎓 Öğrenci No">
+          </div>
+
+          <button type="submit">✨ Kayıt Ol</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
+

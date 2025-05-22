@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danışman Paneli</title>
+  <link rel="stylesheet" href="danisman.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="logo">🎓 <span>Danışman</span></div>
+      <nav>
+        <ul>
+            <li onclick="showSection('profil'); fetchProfil();">
+                <i class="fas fa-user"></i> Profil
+              </li>
+              
+   <li onclick="showSection('ogrenciler'); fetchOgrenciListesi();">
+    <i class="fas fa-user"></i> Öğrenci Listesi
+</li>
+
+
+          <li onclick="showSection('stajDefterleri'); fetchStajDefterleri();">
+  <i class="fas fa-book"></i> Staj Defterleri
+</li>
+
+          <li onclick="showSection('degerlendirme'); fetchDegerlendirilecekler();">
+    <i class="fas fa-star"></i> Değerlendirme
+</li>
+          <li onclick="showSection('sifreDegistir')">
+            <i class="fas fa-key"></i> Şifre Değiştir
+          </li>
+          <li onclick="cikisYap()">
+            <i class="fas fa-sign-out-alt"></i> Çıkış Yap
+          </li>
+          
+
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <!-- PROFİL -->
+      <section id="profil" class="panel-section">
+        <h2>👤 Danışman Profili</h2>
+        <div class="card" id="profilCard">
+          <p>Yükleniyor...</p>
+        </div>
+      </section>
+      
+
+       <!--ÖĞRENCİ LİSTESİ-->
+<section id="ogrenciler" class="panel-section hidden">
+  <h2>👤 Öğrenci Listesi</h2>
+  <div class="card" id="ogrenciCard">
+    <p>Yükleniyor...</p>
+  </div>
+</section>
+
+
+
+
+      <!-- STAJ DEFTERLERİ (veritabanından dinamik doldurulacak) -->
+      <section id="stajDefterleri" class="panel-section hidden">
+  <h2>📘 Staj Defterleri</h2>
+
+  <!-- Günlükleri göstereceğimiz yer -->
+  <div id="gunlukListesi">
+    <p>Yükleniyor...</p>
+  </div>
+</section>
+
+
+      <!-- DEĞERLENDİRME -->
+   <section id="degerlendirme" class="panel-section hidden">
+    <h2>🎓 Değerlendirilecek Öğrenciler</h2>
+    <div id="degerlendirmeListesi">
+        <p>Yükleniyor...</p>
+    </div>
+</section>
+
+
+<!-- Şifre Değiştir -->
+<main class="main-content">
+  <!-- ŞİFRE DEĞİŞTİR -->
+  <section id="sifreDegistir" class="panel-section hidden">
+    <h2>🔑 Şifre Değiştir</h2>
+    <div class="card">
+      <label for="oldPass">Eski Şifre</label>
+      <input type="password" id="oldPass" placeholder="Eski şifrenizi girin" />
+
+      <label for="newPass">Yeni Şifre</label>
+      <input type="password" id="newPass" placeholder="Yeni şifreyi girin" />
+
+      <label for="confirmPass">Yeni Şifre (Tekrar)</label>
+      <input type="password" id="confirmPass" placeholder="Yeni şifreyi tekrar girin" />
+
+      <button id="btnUpdatePass">Şifreyi Güncelle</button>
+      <p id="passMessage"></p>
+    </div>
+  </section>
+</main>
+
+
+
+
+
+
+
+
+    </main>
+  </div>
+
+  <script src="danisman.js"></script>
+</body>
+</html>
+

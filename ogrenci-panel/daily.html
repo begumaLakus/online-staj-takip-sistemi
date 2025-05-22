@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Günlük Program</title>
+  <link rel="stylesheet" href="css/daily.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul class="menu">
+        <li><a href="ogrenci-arayuz.html">👨‍🎓 Profil</a></li>
+        <li class="active"><a href="daily.html">📅 Günlük Program</a></li>
+        <li><a href="belge-yukleme.html">📎 Belge Yükleme</a></li>
+        <li><a href="staj-sureci.html">📘 Staj Süreci</a></li>
+        <li><a href="reset-password.html">🔑 Şifre Değiştir</a></li>
+        <li><a href="#" id="logoutBtn">↩️ Çıkış Yap</a></li>
+      </ul>
+    </aside>
+
+    <!-- İçerik -->
+    <main class="content">
+      <!-- Günlük Ekle -->
+      <section class="add-new-day">
+        <h2>Yeni Günlük Kayıt</h2>
+        <form class="day-form" id="gunlukForm" enctype="multipart/form-data">
+       <div class="form-group">
+        <label>Tarih:</label>
+         <input type="date" id="dayDate" name="tarih" required />
+      </div>
+      <div class="form-group">
+        <label>Başlık:</label>
+        <input type="text" id="dayTitle" name="baslik" placeholder="Başlık yazınız..." required />
+      </div>
+      <div class="form-group">
+        <label>Yapılan İşler:</label>
+        <textarea id="dayDescription" name="icerik" placeholder="Bugün neler yaptınız?" required></textarea>
+      </div>
+  <div class="form-group">
+    <label>Dosya Yükle:</label>
+    <input type="file" id="dayFile" name="dosya" />
+  </div>
+  <button type="submit" class="save-btn">Kaydet</button>
+</form>
+
+      </section>
+
+      <!-- Günlükler -->
+      <section class="day-list">
+        <h2>Kayıtlı Günler</h2>
+        <div id="dayRecords">
+          <p>Henüz kayıt yok.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="JavaScript/daily.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Çıkış Yapılıyor...</title>
+  <script>
+    window.onload = function () {
+      // Giriş bilgilerini silmek istersen buraya ekle:
+      // localStorage.removeItem("token"); // veya localStorage.clear();
+
+      // 1 saniye bekle ve index.html'e git
+      setTimeout(function () {
+        window.location.href = "../index.html"; // bir üst klasöre çık ve index.html'e git
+      }, 1000);
+    };
+  </script>
+  <style>
+    body {
+      background: #f2f6fc;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <h2>Güvenli çıkış yapılıyor...</h2>
+</body>
+</html>
