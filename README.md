@@ -1,40 +1,36 @@
-# staj-takip-sistemi-zbeu
+# Online Staj Defteri (Digital Internship Management System) 🎓
 
-Online Staj Defteri
-Proje Tanımı
-Online Staj Defteri, öğrencilerin staj süreçlerini dijital ortamda kolayca yönetebilecekleri, günlük staj raporlarını kaydedebilecekleri ve danışman onay süreçlerini hızlandıracak bir web tabanlı uygulamadır.
-Proje; öğrenciler, danışmanlar ve iş yeri yetkilileri arasında staj sürecindeki evrak, onay ve takip işlerini dijitalleştirmeyi hedeflemektedir.
+An integrated, web-based platform designed to digitize and optimize university internship processes, replacing traditional paper-based tracking with a transparent and secure digital workflow.
 
-🎯 Amaç ve Vizyon
-Staj defteri ve süreçlerini dijital ortama taşımak.
-Kâğıt israfını azaltmak, zaman ve iş gücü tasarrufu sağlamak.
-Öğrenci, danışman ve iş yeri iletişimini hızlandırmak.
-İlerleyen süreçlerde staj sicil fişi, onay belgeleri gibi tüm resmi evrakları da dijitalleştirmek ve sisteme entegre etmek.
-İlk aşamada fakülte bazlı uygulama, sonraki hedef üniversite genelinde yaygınlaştırma.
+---
 
-💻 Kullanılan Teknolojiler
-Frontend: HTML, CSS, JavaScript (Vanilla)
-Backend: PHP (API tabanlı yapı)
-Veritabanı: PostgreSQL
-Diğer: JSON, AJAX, Local Storage kullanımı
+### 🌟 Project Vision & Problem Statement
+The project addresses the inefficiencies of manual internship tracking. By introducing a centralized digital platform, it eliminates paper waste, prevents data loss, and accelerates communication between students, academic advisors, and company supervisors. The long-term vision is to integrate all official documentation, including internship evaluation forms and certificates, into a university-wide digital ecosystem.
 
-🚀 Özellikler
-✅ Öğrenci kayıt/giriş sistemi
-✅ Günlük staj defteri yazma, düzenleme, silme
-✅ Danışman tarafından günlük onay/reddetme mekanizması
-✅ Belge yükleme (staj dosyaları, belgeler vs.)
-✅ Öğrenci staj profil ekranı
-✅ Staj bitişinde otomatik staj tamamlama özelliği
+### 🚀 Key Features & Functionality
+- **Student Management:** Secure registration and personalized profile dashboards.
+- **Digital Daily Logs:** Tools for students to write, edit, and manage daily internship reports.
+- **Advisor Approval Mechanism:** Real-time daily approval/rejection workflow for academic advisors.
+- **Document Management:** Secure system for uploading and storing official internship files.
+- **Automated Workflow:** Automatic internship completion tracking and status updates.
 
-Katkı Sağlayanlar
-Backend: @begumaLakus
-Backend: @tahsinkokum
-Frontend: @nisacibik
-Frontend: @alihanarık
+### 🛠️ Tech Stack & Architecture
+Developed using **Software Development Life Cycle (SDLC)** principles to ensure a structured and reliable system.
 
-📝 Gelecek Geliştirmeler
-Staj Sicil Fişi online doldurma ve onay süreci
-Öğrenci işleri için de bir panel
-Bildirim sistemi
-Mobil uyumlu tasarım geliştirme
-QR kodla belge doğrulama entegrasyonu
+- **Frontend:** HTML5, CSS3, JavaScript (Vanilla JS with AJAX for asynchronous data handling).
+- **Backend:** PHP with a RESTful API-based architecture.
+- **Database:** PostgreSQL (Centralized relational database for persistent data storage).
+- **Data Exchange:** JSON for seamless communication between frontend and backend.
+
+### 🏗️ Contributors
+- **Backend & API Development:** @begumaLakus, @tahsinkokum
+- **Frontend & UI/UX:** @nisacibik, @alihanarık
+
+---
+
+### 📝 Future Roadmap
+- **Official Documentation:** Integration of online "Internship Evaluation Forms" and official approval stamps.
+- **Administrative Panel:** Dedicated dashboard for the Student Affairs department.
+- **Notification System:** Real-time alerts for approval status changes and deadlines.
+- **Security Enhancements:** QR code-based document verification system.
+- **Mobile Optimization:** Fully responsive design for on-the-go management.
